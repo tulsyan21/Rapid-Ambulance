@@ -4,12 +4,7 @@
     <div class="row mapAndDetails">
         <div class="col-lg-6">
             <div id="map" class="text-center">
-                <h4>MAP</h4>
-                <ul>
-                    <li>Latitude<span id="Latitude"></span></li>
-                    <li>Longitude<span id="Longitude"></span></li>
-                    <li>Accuracy<span id="Accuracy"></span></li>
-                </ul>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1fbcKMSiydSqNPRTxySDOePfcM2wNdGIu" style="display: block; width: 100%; height: 100%"></iframe>
             </div>
         </div>
         <div class="accordion col-lg-6" id="accordionExample">
@@ -21,35 +16,18 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                     <div class="card-body">
-                        <p class="card-text">Our algorithm suggests that this hosppital is the best choice for you.</p>
+                        <p class="card-text">Our algorithm suggests that this hospital is the best choice for you.</p>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Name: </li>
-                        <li class="list-group-item">Specialisation: </li>
-                        <li class="list-group-item">Distance: </li>
-                        <li class="list-group-item">Availability: </li>
-                        <li class="list-group-item">Crowd: </li>
+                        <li class="list-group-item">Name: {{hospital.name}}</li>
+                        <li class="list-group-item">Distance: {{distance}} </li>                        
+                        <li class="list-group-item">Availability: {{hospital.available_beds}} </li>
+                        <li class="list-group-item">Crowd: {{hospital.crowd}} </li>
+                        <!-- <li class="list-group-item">Specialisation:{{dept}}</li> -->
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- <div class="card">
-            <h5 class="card-header">"Hotel" Details</h5>
-            <div class="card-body">
-                <p class="card-text">Our algorithm suggests that this hosppital is the best choice for you.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Name: </li>
-                <li class="list-group-item">Specialisation: </li>
-                <li class="list-group-item">Availability: </li>
-                <li class="list-group-item">Crowd: </li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Show route</a>
-                <a href="#" class="card-link">Fuck off</a>
-            </div>
-        </div> -->
 {% endblock %}
 

@@ -13,14 +13,3 @@ jQuery(document).ready(function ($) {
     //Fire it when the page first loads:
     alterClass();
 });
-
-// navigator.geolocation.getCurrentPosition(function (location) {
-//     $('#Latitude').text(location.coords.latitude)
-//     $('#Longitude').text(location.coords.longitude)
-//     $('#Accuracy').text(location.coords.accuracy)
-    
-    
-//     // console.log(location.coords.latitude);
-//     // console.log(location.coords.longitude);
-//     // console.log(location.coords.accuracy);
-// });
